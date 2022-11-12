@@ -10,8 +10,9 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
-from pathlib import Path
 import os
+from pathlib import Path
+
 import dj_database_url
 if os.path.isfile('env.py'):
     import env
@@ -32,8 +33,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['codestar2022-trevor.herokuapp.com', 'localhost']
 
-
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -42,9 +41,9 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'clouindary_storage',
+    'cloudinary_storage',
     'django.contrib.staticfiles',
-    'cloudinary'
+    'cloudinary',
     'blog',
 ]
 
@@ -133,6 +132,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 # this comes from the lib we installed above and put in our installed_apps section  # noqa
 STATIC_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
+
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 

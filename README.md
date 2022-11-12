@@ -105,3 +105,7 @@ pip3 freeze --local > requirements.txt
     Add these to the `Installed Apps` in our `settings.py`
 
     Then we need to tell Django to use `cloudinary` to store our `static files`
+
+```
+heroku logs --app codestar2022-trevor --tail
+```
