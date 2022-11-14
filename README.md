@@ -109,3 +109,11 @@ pip3 freeze --local > requirements.txt
 ```
 heroku logs --app codestar2022-trevor --tail
 ```
+
+Expand the messaging system to display error messages when a user submits an empty comment form
+
+Use the social apps feature of AllAuth to add single sign-on using Google, Favebook or another authentication service
+
+Build a number_of_comments on the front page
+
+combine knowledge of JavaScript fetch with your Django knowldge to silently call the like URL in the background
